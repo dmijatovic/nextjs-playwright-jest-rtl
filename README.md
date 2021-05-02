@@ -5,8 +5,11 @@ This sample project is basic setup for testing with Jest and Playwright for end-
 ## Dependencies
 
 ```bash
-# install jest, react-testing-library, playwright and jest-playwright plugins
-npm i -D @testing-library/react @testing-library/jest-dom jest jest-playwright-preset playwright jest-process-manager
+# unit testing with jest and react testing library
+npm i -D @testing-library/react @testing-library/jest-dom jest
+
+# end to end testing with playwright and jest
+npm i -D jest jest-playwright-preset playwright jest-process-manager
 ```
 
 ## JSX babel transpile
