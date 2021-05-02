@@ -11,25 +11,25 @@ export default function PostsPage() {
   const [loading,setLoading] = useState(true)
 
   useEffect(()=>{
-    console.log("Posts.useEffect...start")
-    fetch('https://jsonplaceholder.typicode.com/posts')
+    // console.log("Posts.useEffect...start")
+    fetch('/api/posts')
       .then(res=>{
-        console.log("res...", res)
+        // console.log("res...", res)
         return res.json()
       })
       .then(data=>{
-        console.log("data...", data)
+        // console.log("data...", data)
         setPosts(data)
         setLoading(false)
       })
       .catch(e=>{
-        console.log("Error:", e.message)
+        // console.log("Error:", e.message)
         setLoading(false)
       })
   },[])
 
   function renderPosts(){
-    console.log("renderPosts...posts...",posts)
+    // console.log("renderPosts...posts...",posts)
     if (loading===true){
       return(
         <div>Loading...</div>
@@ -43,7 +43,7 @@ export default function PostsPage() {
       )
     })
   }
-  console.log("Posts...loading...", loading)
+  // console.log("Posts...loading...", loading)
   return (
     <>
       <Head>

@@ -46,6 +46,17 @@ For unit testing when using fetch api we need to install whatwg-fetch because no
 npm i -D msw whatwg-fetch
 ```
 
+### Browser mock (e2e tests)
+
+For mocking api calls directly in the browser perform [following steps from manual](https://mswjs.io/docs/getting-started/integrate/browser)
+
+```bash
+# create service worker file
+npx msw init public/ --save
+```
+
+This will create `mockServiceWorker.js` file in the public directory.
+
 ### Create folder for handlers
 
 In this project `msw\mocks` folder is created for the mocked data scripts.

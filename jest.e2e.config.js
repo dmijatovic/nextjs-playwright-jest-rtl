@@ -1,4 +1,4 @@
 module.exports = {
   preset: 'jest-playwright-preset',
-  testMatch:["**/e2e/**/*.js"],
+  testMatch:["**/e2e/**/*.spec.js"],
 }

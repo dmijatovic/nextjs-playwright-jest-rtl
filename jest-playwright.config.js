@@ -3,7 +3,8 @@ module.exports={
   browsers:["chromium"],
   launchOptions:{
     headless:false,
-    slowMo:100
+    slowMo:100,
+    devtools:true
   },
   // jest-process-manager settings
   // to start app in dev mode

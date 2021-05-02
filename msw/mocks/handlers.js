@@ -4,7 +4,7 @@ const posts = require('./posts.json')
 
 export const handlers=[
   rest.get("https://jsonplaceholder.typicode.com/posts",(req,res,ctx)=>{
-    return res( 
+    return res(
       ctx.status(200),
       ctx.json(posts)
     )
