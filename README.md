@@ -35,7 +35,7 @@ For js we use jsconfig.json and for typescript tsconfig.json for [next to suppor
 
 For unit test we use Jest and React testing library. We use the default setup file `jest.config.js` and `setupTests.js` for unit testing setup where we set specific nextjs and react testing library settings. If you are using Create React App this will be already setup properly.
 
-Import to note is that in ignore patters we include e2e folder.
+Note e2e folder in testPathIgnorePatterns for unit tests.
 
 ```Javascript
 // jest.config.js
@@ -54,6 +54,8 @@ In setupTests we import react testing library specific assertions for Jest.
 ## Jest setup for end to end tests
 
 For end to end test we use Jest and Playwright. Jest configuration is stored in `jest.e2e.config.js` and configuration of jest-playwright plugin is in default configuration file `jest-playwright.config.js`.
+
+Note testMatch definition to only look at e2e folder for end-to-end tests.
 
 ```Javascript
 // jest.e2e.config.js
@@ -92,7 +94,7 @@ module.exports={
 
 ## Usage
 
-First install all dependcies
+First install all dependcies using `npm install`
 
 ```bash
 # unit test with jest and react-testing-library

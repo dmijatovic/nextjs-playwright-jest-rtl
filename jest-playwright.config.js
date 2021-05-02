@@ -18,5 +18,5 @@ module.exports={
       }
     }
   },
-  collectCoverage: true
+  collectCoverage: false
 }
