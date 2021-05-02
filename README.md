@@ -34,6 +34,22 @@ For js we use jsconfig.json and for typescript tsconfig.json for [next to suppor
 }
 ```
 
+## Mock api calls
+
+### Unit testing with Jest
+
+For mocking the api calls we test mock service worker rather that mocking response in Jest. This has advantage that we can use same mocks in unit test and e2e tests.
+For unit testing when using fetch api we need to install whatwg-fetch because nodejs does not have window.fetch method.
+
+```bash
+# install msw and fetch utils for nodejs
+npm i -D msw whatwg-fetch
+```
+
+### Create folder for handlers
+
+In this project `msw\mocks` folder is created for the mocked data scripts.
+
 ## Jest setup for unit tests
 
 For unit test we use Jest and React testing library. We use the default setup file `jest.config.js` and `setupTests.js` for unit testing setup where we set specific nextjs and react testing library settings. If you are using Create React App this will be already setup properly.

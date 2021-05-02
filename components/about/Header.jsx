@@ -5,7 +5,7 @@ export default function Header(){
     <nav className="header-nav">
       <a href="/">Home</a>
       <span>About</span>
-      <a href="/info">Info</a>
+      <a href="/posts">Posts</a>
     </nav>
     </>
   )
